@@ -73,7 +73,7 @@ function generateReadme() {
     
     // Demo
     if (demo.value.trim()) {
-        readme += `## Demo\n\n🔗 [Live Demo](${demo.value})\n\n`;
+        readme += `## Demo\n\n[Live Demo](${demo.value})\n\n`;
     }
     
     // Table of Contents
@@ -92,7 +92,7 @@ function generateReadme() {
         readme += `## Features\n\n`;
         const featureList = features.value.split('\n').filter(f => f.trim());
         featureList.forEach(feature => {
-            readme += `- ✨ ${feature.trim()}\n`;
+            readme += `- ${feature.trim()}\n`;
         });
         readme += `\n`;
     }
@@ -133,7 +133,7 @@ function generateReadme() {
     if (authorName.value.trim() || github.value.trim() || email.value.trim()) {
         readme += `## Author\n\n`;
         if (authorName.value.trim()) {
-            readme += `👤 **${authorName.value}**\n\n`;
+            readme += `**${authorName.value}**\n\n`;
         }
         if (github.value.trim()) {
             readme += `- GitHub: [@${github.value}](https://github.com/${github.value})\n`;
@@ -146,7 +146,7 @@ function generateReadme() {
     
     // Footer
     readme += `---\n\n`;
-    readme += `⭐️ If you found this project helpful, please give it a star!\n`;
+    readme += `If you found this project helpful, please give it a star!\n`;
     
     // Update preview
     preview.innerHTML = readme;
@@ -214,7 +214,11 @@ function showToast(message, type = 'success') {
     toast.textContent = message;
     
     if (type === 'error') {
-        toast.style.background = '#ef4444';
+        toast.style.background = 'rgba(239, 68, 68, 0.2)';
+        toast.style.borderColor = 'rgba(239, 68, 68, 0.3)';
+    } else {
+        toast.style.background = 'rgba(14, 165, 233, 0.2)';
+        toast.style.borderColor = 'rgba(14, 165, 233, 0.3)';
     }
     
     document.body.appendChild(toast);
