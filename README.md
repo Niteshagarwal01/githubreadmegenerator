@@ -1,6 +1,5 @@
 # GitHub README Generator — Professional Documentation Tool (small build#13)
-
-<img width="1024" height="572" alt="GitHub README Generator Preview" src="https://github.com/user-attachments/assets/5f8461fa-ddb6-4171-aa41-41df281f4352" />
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/1ee72570-62ad-4a1b-b445-c1bc6f185e61" />
 
 A professional README generator featuring real-time markdown preview, multi-section support, and automatic badge generation. Built with vanilla JavaScript and elegant glassmorphic design for a premium user experience.
 
